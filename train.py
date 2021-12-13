@@ -49,7 +49,7 @@ class GANTrainer:
 
         # Set up optimizers for both discriminator and generator
         self.optimizer_gen = optim.Adam(self.generator.parameters(), lr=gen_learning_rate)
-        self.optimizer_disc = optim.Adam(self.discriminator.parameters(), lr=disc_learning_rate, weight_decay=0.002)
+        self.optimizer_disc = optim.Adam(self.discriminator.parameters(), lr=disc_learning_rate, weight_decay=0.001)
 
         # Initialize the loss functions
         self.adversarial_loss = torch.nn.MSELoss()

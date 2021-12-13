@@ -61,8 +61,8 @@ def main():
         dataset_object=dataset_object,
         epochs=100,
         batch_size=256,
-        gen_learning_rate = 0.01,
-        disc_learning_rate=0.001, # TODO: test different learning rates for generator and discriminator
+        gen_learning_rate = 0.001,
+        disc_learning_rate=0.002, # TODO: test different learning rates for generator and discriminator
     )
 
     trainer.train()
